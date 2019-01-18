@@ -1,0 +1,138 @@
+.articles {
+    background-color: rgb(253, 253, 253);
+    padding: 25px 50px 25px;
+    grid-template-columns:1fr 2fr; 
+    display:grid; 
+    grid-area:articles;
+    grid-template-areas:
+    "article1 article1"
+    "article2 article2"
+    "article3 article4";
+    grid-column-gap: 50px;
+    border-style: solid;
+    border-width: 2.5px;
+    font-size: 13px;
+    border-style: dotted;
+    border-color: lightgray;      
+}
+
+
+div {
+    border-color: lightgray;
+    border-style: dotted;
+}
+
+.Aside {
+    
+    background-color: rgb(253, 253, 253);
+    border: dotted;
+    border-color: lightgray;
+}
+
+.Aside ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Aside li:after {
+    content: '✓';
+    padding: 0.5em;}
+
+.Aside li::before {
+    content: none;
+    padding: 0.5em;}
+
+li {
+    
+    border-style: dotted;
+    border-color: darkgray;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.ida {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Header {
+    border-style: dotted;
+    border-color: lightgray;
+    background-color: lightslategray;
+    text-align: center;
+    background-image: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0346/9623/rdogs_4_pt_shop_preview.png)
+
+}
+
+h1 {
+    background-color: rgba(255, 254, 254, 0.7);
+    text-align: center;
+
+}
+
+.navi {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(143, 163, 184, 0.9);
+
+}
+
+.footer {
+    background-color:slategray;
+    grid-area: footer;
+    padding: 25px 50px 25px;
+    font-size: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: lightgray;
+    border-style: dotted;
+}
+.footer a {
+    font-size: 2em;
+    text-align: center;
+    padding: 2px;
+}
+
+.footer a:hover {
+    background-color: rgb(176, 199, 223);
+    animation: hover 0.2s ease-in-out 0s 1 forwards;
+}
+
+
+
+@keyframes hover { 
+    0% {
+        transform: scale(1.0)
+    }
+    100% {
+        transform: scale(1.3)
+    }
+}
+
